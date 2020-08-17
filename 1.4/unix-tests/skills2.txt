@@ -1,9 +1,0 @@
-Internet
-Unix
-Bash
-wifi
-linux
-ubuntu
-shell
-home
-end line

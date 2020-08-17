@@ -1,14 +1,18 @@
- #!/bin/bash
+#!/bin/bash
+NAMEDIR=$1
+NAMEEXT=$2
 
-  DIRECTORY=$1
-  EXTENSION=$2
+DAY=$(date +%F)
 
-  DAY=$(date +%F)
+if [ $1 ] && [ $2 ]
+then
+    cd $NAMEDIR
 
-  cd $DIRECTORY
-
-  for FILE in `ls *.$EXTENSION`
-   do
-      echo "Renomeando $FILE para ${DAY}-${FILE}"
-      mv $FILE ${DAY}-${FILE}
-   done
+    for FILE in `ls *.$NAMEEXT`
+    do
+        echo "Renomeando $FILE para ${DAY}-${FILE}"
+        mv $FILE ${DAY}-${FILE}
+    done
+else
+    echo "Argumentos inválidos ou vazios"
+fi

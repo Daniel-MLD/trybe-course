@@ -1,3 +1,3 @@
 #!/bin/bash
-#Eu sou Tryber e estou gostando de aprender a programar.
+#Vou ter muito sucesso na programação!
 echo "Shell Script é demais!"

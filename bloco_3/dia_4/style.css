@@ -1,3 +1,17 @@
+
+body {
+	background-color: #f5f5d5;
+}
+
 .scientific-name {
 	font-style: italic;
+}
+
+table , td , th{
+	border: 1px solid #000000;
+}
+
+table th {
+	text-align: left;
+	width: 5px;
 }

@@ -1,3 +1,4 @@
+//Função usada para a geração de valores aleatórios de 0 a 100
 let nota = Math.round((Math.random()*100));
 console.log('Seu percentual de acertos é de: ' + nota + '%');
 if (nota >= 90) {

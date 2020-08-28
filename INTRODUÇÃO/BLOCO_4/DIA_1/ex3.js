@@ -1,3 +1,4 @@
+//Função usada para a geração de valores aleatórios de 0 a 10
 const a = Math.round((Math.random()*10));
 const b = Math.round((Math.random()*10));
 const c = Math.round((Math.random()*10));

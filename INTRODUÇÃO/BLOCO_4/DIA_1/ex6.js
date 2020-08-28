@@ -2,6 +2,7 @@ const pecas = ['peao', 'Torre', 'cavalo', 'BISPO', 'rainha', 'rei']
 for (let i = 0; i < pecas.length; i++) {
   pecas[i] = pecas[i].toLocaleLowerCase();
 }
+//Função usada para a geração de valores aleatórios de 0 a 5
 let a = Math.round((Math.random()*5));
 switch (a) {
   case 0:

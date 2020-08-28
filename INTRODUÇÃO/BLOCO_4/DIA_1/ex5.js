@@ -1,3 +1,4 @@
+//Função usada para a geração de valores aleatórios de 0 a 180
 const a = Math.round((Math.random()*180));
 const b = Math.round((Math.random()*180));
 const c = Math.round((Math.random()*180));

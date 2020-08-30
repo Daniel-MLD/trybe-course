@@ -1,6 +1,4 @@
-/* Para o primeiro exercício de hoje, faça um programa que, dado
-um valor n qualquer, seja n > 1, imprima na tela um quadrado
-feito de asteriscos de lado de tamanho n. */
+/* Agora inverta o lado do triângulo. Por exemplo:*/
 //Geração de valores randômicos de 1 a 50
 const n = Math.ceil(Math.random()*50);
 console.log(n);

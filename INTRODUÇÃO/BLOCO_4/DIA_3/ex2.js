@@ -7,7 +7,7 @@ console.log(n);
 for (let i = 0; i < n; i += 1) {
   let line = ``;
   for (let j = 0; j < contLine; j += 1) {
-    line = `*${line}`;
+    line = line + `*`;
   }
   contLine += 1;
   console.log(line);

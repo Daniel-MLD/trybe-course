@@ -7,7 +7,12 @@ console.log(n);
 for (let i = 0; i < n; i += 1) {
   let line = ``;
   for (let j = 0; j < n; j += 1) {
-    line = line + `*`;
+    if (j >= (n-(i+1))) {
+      line = line + `*`;
+    } else {
+      line = line + ` `;
+    }
+    
   }
   console.log(line);
 }

@@ -6,3 +6,6 @@ let info = {
 console.log(`Bem vinda, ${info.personagem}`);
 info.recorrente = "Sim";
 console.log(info);
+for (let chave in info) {
+  console.log(info[chave]);
+}

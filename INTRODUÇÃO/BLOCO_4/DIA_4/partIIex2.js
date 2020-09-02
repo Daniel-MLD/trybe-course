@@ -1,11 +1,11 @@
-let numeros = [5, 9, 33, 2, 15, 6, 8];
+let numeros =  [2, 3, 6, 7, 10, 1];
 let maiorNum = maiorValor(numeros);
 
 function maiorValor(testNum) {
   let maior = testNum[0];
   for (let i = 1; i < testNum.length; i++) {
     if (testNum[i] > maior) {
-      maior = testNum[i];
+      maior = i;
     }
   }
   return maior

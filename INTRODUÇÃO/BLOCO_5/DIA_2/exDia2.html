@@ -80,6 +80,14 @@
       imgElement.src = "https://picsum.photos/200";
       imgElement.className = "small-image";
       divLeftContent.appendChild(imgElement);
+      let ulElement = document.createElement("ul");
+      let numbers = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
+      for (let index = 0; index < numbers.length; index += 1) {
+        let ulItem = document.createElement("li");
+        ulItem.innerText = numbers[index];
+        ulElement.appendChild(ulItem);
+      }
+      divRightContent.appendChild(ulElement);
     </script>
   </body>
 </html>

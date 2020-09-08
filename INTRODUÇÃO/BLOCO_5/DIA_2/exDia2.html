@@ -64,6 +64,12 @@
       let divMainContent = document.createElement("div");
       divMainContent.className = "main-content";
       bodyElement.appendChild(divMainContent);
+      let divCenterContent = document.createElement("div");
+      divCenterContent.className = ("center-content");
+      divMainContent.appendChild(divCenterContent);
+      let pElement = document.createElement("p");
+      pElement.innerText = "Lorem ipsum";
+      divCenterContent.appendChild(pElement);
     </script>
   </body>
 </html>

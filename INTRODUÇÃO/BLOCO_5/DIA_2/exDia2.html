@@ -70,6 +70,12 @@
       let pElement = document.createElement("p");
       pElement.innerText = "Lorem ipsum";
       divCenterContent.appendChild(pElement);
+      let divLeftContent = document.createElement("div");
+      divLeftContent.className = "left-content";
+      let divRightContent = document.createElement("div");
+      divRightContent.className = "right-content";
+      divMainContent.appendChild(divLeftContent);
+      divMainContent.appendChild(divRightContent);
     </script>
   </body>
 </html>

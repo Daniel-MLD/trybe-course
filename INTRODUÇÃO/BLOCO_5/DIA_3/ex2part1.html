@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Calculator</title>
+</head>
+<body>
+
+  <label>Esse número ao quadrado:
+    <input type="number" id="square-input" size="2">
+  </label>
+  <button id="square-button">Calculate</button>
+  <br><br>
+  
+  <label>Metade deste número:
+    <input type="number" id="half-input" size="2">
+  </label>
+  <button id="half-button">Calculate</button>
+  <br><br>
+  
+  <label>
+    Fração:
+    <input type="number" id="percent1-input" size="2">
+  </label>
+  <label>
+    Inteiro:
+    <input type="number" id="percent2-input" size="2">
+  </label>
+  <button id="percent-button">Calculate</button>
+  <br><br>
+  
+  <label>Calcular a área de um círculo com raio:
+    <input type="number" id="area-input" size="2">
+  </label>
+  <button id="area-button">Calculate</button> 
+  <br><br>
+  <div id="solution"></div>
+  
+  
+  <script>
+    let divSolution = document.getElementById("solution");
+    let inputSquare = document.getElementById("square-input");
+    let inputHalf = document.getElementById("half-input");
+    let inputPercent1 = document.getElementById("percent1-input");
+    let inputPercent2 = document.getElementById("percent2-input");
+    let inputArea = document.getElementById("area-input");
+
+    inputSquare.addEventListener("keyup", function() {
+      divSolution.innerText = 'O quadrado de '+inputSquare.value+' é '+(inputSquare.value*inputSquare.value);
+    });
+
+    inputHalf.addEventListener("keyup", function(){
+      divSolution.innerText = 'Metade de '+inputHalf.value+' é '+(inputHalf.value / 2);
+    });
+
+    inputPercent2.addEventListener("keyup", calculaPorcentagem);
+    inputPercent1.addEventListener("keyup", calculaPorcentagem);
+
+    inputArea.addEventListener("keyup", function(){
+      divSolution.innerText = 'A área do círculo é '+(Math.PI * (inputArea.value*inputArea.value));
+    });
+
+    function calculaPorcentagem(){
+      divSolution.innerText = inputPercent1.value+' é '+((inputPercent1.value / inputPercent2.value) * 100)+'% de '+inputPercent2.value;
+    }
+  </script>
+  
+</body>
+</html>

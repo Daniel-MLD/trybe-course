@@ -1,0 +1,42 @@
+body {
+  background-color: rgb(236, 237 , 238);
+  box-sizing: border-box;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+  width: 70%;
+}
+
+fieldset {
+  background-color: rgb(246, 247 , 248);
+  border: 1px solid rgb(226, 227 , 228);
+  border-radius: 30px;
+  margin: 20px auto 20px auto;
+  padding: 30px 50px 30px 50px;
+  text-align: left;
+}
+
+::placeholder {
+  color: gray;
+}
+
+input, select, textarea {
+  border: 1px solid rgb(226, 227 , 228);
+  border-radius: 3px;
+  display: block;
+  height: 30px;
+  margin: auto;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.form-out {
+  background-color: rgb(246, 247 , 248);
+  border: 1px solid rgb(226, 227 , 228);
+  border-radius: 30px;
+  font-family: sans-serif;
+  line-height: 30px;
+  margin-top: 20px;
+  padding: 30px;
+  text-align: left;
+}

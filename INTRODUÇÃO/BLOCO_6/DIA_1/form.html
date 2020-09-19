@@ -10,20 +10,24 @@
   <form id="cadastro" action="" method="post">
     <fieldset class="personal-data">
       <legend>Dados Pessoais:</legend>
-      <input name="name" type="text" maxlength="40" required="required" placeholder="Seu nome">
-      <input name="email" type="email" maxlength="50" required="required" placeholder="Seu e-mail">
-      <input name="cpf" type="text" maxlength="11" required="required" placeholder="Seu CPF">
-      <input name="ende" type="text" maxlength="200" required="required" placeholder="Seu endereço">
-      <input name="city" type="text" maxlength="28" required="required" placeholder="Sua cidade">
+      <input name="name" type="text" maxlength="40" required="required" placeholder="Seu nome*">
+      <input name="email" type="email" maxlength="50" required="required" placeholder="Seu e-mail*">
+      <input name="cpf" type="text" maxlength="11" required="required" placeholder="Seu CPF*">
+      <input name="ende" type="text" maxlength="200" required="required" placeholder="Seu endereço*">
+      <input name="city" type="text" maxlength="28" required="required" placeholder="Sua cidade*">
       <select name="state" id="state">
-        <option selected="selected" value="">Seu estado</option>
+        <option selected="selected" value="">Seu estado*</option>
       </select>
+      <input value="CASA" class="radio" type="radio" name="tipo" id="tipo-casa" required="required">
+      <label for="tipo-casa">Casa</label>
+      <input value="APARTAMENTO" class="radio" type="radio" name="tipo" id="tipo-apartamento" required="required">
+      <label for="tipo-apartamento">Apartamento</label>
     </fieldset>
     <fieldset class="job-data">
       <legend>Dados do último emprego:</legend>
-      <textarea name="resume" id="resume" cols="30" rows="10" maxlength="1000" placeholder="Resumo do último emprego" required="required"></textarea>
-      <input name="cargo" type="text" maxlength="40" required="required" placeholder="Cargo">
-      <input name="description" type="text" maxlength="500" required="required" placeholder="Descrição do cargo">
+      <textarea name="resume" id="resume" cols="30" rows="10" maxlength="1000" placeholder="Resumo do último emprego*" required="required"></textarea>
+      <input name="cargo" type="text" maxlength="40" required="required" placeholder="Cargo*">
+      <input name="description" type="text" maxlength="500" required="required" placeholder="Descrição do cargo*">
       <input name="date" type="date" required="required">
     </fieldset>
   </form>

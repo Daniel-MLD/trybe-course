@@ -50,7 +50,13 @@ btnEnviar.addEventListener('click', function (event) {
     const fieldSetJob = document.querySelector('.job-data').elements;
     for (let index = 0; index < fieldSetPersonal.length; index += 1) {
       const newDiv = document.createElement('div');
-      newDiv.innerText = fieldSetPersonal[index].value.toUpperCase();
+      if (fieldSetPersonal[index].className === 'radio') {
+        if (fieldSetPersonal[index].checked) {
+          newDiv.innerText = fieldSetPersonal[index].value
+        }
+      } else {
+        newDiv.innerText = fieldSetPersonal[index].value.toUpperCase();
+      }
       divElement.appendChild(newDiv);
     }
     for (let index = 0; index < fieldSetJob.length; index += 1) {
@@ -58,6 +64,8 @@ btnEnviar.addEventListener('click', function (event) {
       newDiv.innerText = fieldSetJob[index].value.toUpperCase();
       divElement.appendChild(newDiv);
     }
+  } else {
+    alert('Preencha os campos obrigatórios!')
   }
 })
 

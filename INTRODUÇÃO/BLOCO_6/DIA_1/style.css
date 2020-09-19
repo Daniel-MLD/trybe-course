@@ -40,3 +40,10 @@ input, select, textarea {
   padding: 30px;
   text-align: left;
 }
+
+.radio {
+  display: inline;
+  height: 15px;
+  margin-left: 70px;
+  width: 15px;
+}

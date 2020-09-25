@@ -65,7 +65,7 @@ btnEnviar.addEventListener('click', function (event) {
       divElement.appendChild(newDiv);
     }
   } else {
-    //alert('Preencha os campos obrigatórios!')
+    alert('Preencha os campos obrigatórios!')
   }
 })
 

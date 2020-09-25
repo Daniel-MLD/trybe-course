@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 3</title>
+  <style>
+    .flex-container {
+      align-items:center;
+      display: flex;
+      flex-direction: column;
+      height: 600px;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <button id="button-count">Clique Aqui Para Somar</button>
+    <p id="count-result"></p>
+  </div>
+  <script>
+    const button = document.querySelector('#button-count');
+    let clickCount = 0
+    button.addEventListener('click', () => 
+      document.querySelector('#count-result').innerText = clickCount++);
+  </script>
+</body>
+</html>

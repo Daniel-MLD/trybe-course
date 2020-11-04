@@ -28,8 +28,6 @@ const findAnimalByAge = (age) => (
   })
 );
 
-
-
 const getAnimal = (nameOrAge) => {
   if (typeof nameOrAge === 'string') {
     return findAnimalByName(nameOrAge).then((animal) => animal);

@@ -1,11 +1,13 @@
 import React from 'react';
+import './Tasks.css'
 
-class tasks extends React.Component {
+class Tasks extends React.Component {
   render() {
+    console.log(this.props);
     return (
       <li className='list'>{this.props.value}</li>
     );
   }
 }
 
-export default tasks;
+export default Tasks;

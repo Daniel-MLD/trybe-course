@@ -1,0 +1,49 @@
+.pokemon {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  min-width: 300px;
+}
+.pokemon-infos {
+  color: whitesmoke;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+  text-shadow: 2px 2px 2px black;
+}
+
+.pokemon-image {
+  background-color: whitesmoke;
+  border-radius: 40%;
+  height: 100px;
+  margin-top: 10px;
+}
+
+.electric {
+  background-color: yellow;
+}
+
+.bug {
+  background-color: green;
+}
+
+.fire {
+  background-color: orange;
+}
+
+.poison {
+  background-color: violet;
+}
+
+.psychic {
+  background-color: purple;
+}
+
+.normal {
+  background-color: red;
+}
+
+.dragon {
+  background-color: blue;
+}
+

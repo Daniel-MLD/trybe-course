@@ -9,7 +9,7 @@ class Pokedex extends React.Component {
     const pokemonList = this.props.data;
     return (
       <div className='pokedex'>
-        <div className='pokedex-title'>
+        <div className='pokedexs-title'>
           <p>POKEDEX</p>
         </div>
         <div className='pokedex-pokemon-container'>
